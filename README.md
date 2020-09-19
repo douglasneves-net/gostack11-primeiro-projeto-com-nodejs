@@ -40,5 +40,5 @@ yarn add ts-node-dev -D
 ### Modificações
 **remoção do dist**: A biblioteca **ts-node-dev** remove a necessidade de ter uma pasta **dist** na raiz do projeto para arquivos compilados .ts para .js, isso porque ela faz papel do **nodemon** que recarrega automaticamente de acordo com as mudanças no código e oculta o ato de compilação, ou seja, podemos subir um arquivo.ts diretamente em desenvolvimento, configuramos em **package.json** uma linha de comando para executar a biblioteca.
 <br />
-**Obs:** Dentro de **package.json** adicionamos o parâmetro **--transpile-only** que não corrige os erros do código, apenas compila, isso acelera a execução, também usamos  **--ignore-watch node_modules** para ignorar a pasta **node_modules**.
+**Obs:** Dentro de **package.json** adicionamos o parâmetro **--transpile-only** que não corrige os erros do código, apenas compila, isso acelera a execução, também usamos  **--ignore-watch node_modules** para ignorar a pasta **node_modules**, por ultimo, temos o parâmetro **--inspect** que é utilizado para **debug**.
 
